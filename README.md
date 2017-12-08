@@ -4,7 +4,7 @@
 
 Download images from google. Currently using JS with plans to include other languages in the future.
 
-*Default set to download 100 hotdog images - see step 5 to overwrite default*
+*Default set to download 100 hotdog images to imgs folder in root directory - see step 5 to overwrite default.*
 
 ## Instructions
 
@@ -14,7 +14,7 @@ Download images from google. Currently using JS with plans to include other lang
   $git clone "https://github.com/quickresolve/img-scrapers.git"
   
   ```
-2. Enter img-scrapers direcotry
+2. Enter img-scrapers directory
 
 ```
 $cd img-scrapers/
@@ -37,7 +37,7 @@ $cd img-scrapers/
 5. **OPTIONAL** Specify optional parameters for image keyword and number of images(max 100)
  
   ```
-  $node scrape-google {keyword} {number}
+  $node scrape-google {keyword} {number} {destination path}
   
   ```
  

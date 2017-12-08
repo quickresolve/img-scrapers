@@ -1,4 +1,4 @@
-var scrapeGoogle = (keyword, num) => {
+var scrapeGoogle = (keyword, num, dest) => {
 
   // Scrape image data from google
   var Scraper = require ('images-scraper')
@@ -6,8 +6,7 @@ var scrapeGoogle = (keyword, num) => {
     , fs = require('fs')
     , util = require('util')
     , download = require('download')
-    , imgsDataFile = keyword + '-images.json'
-    , dest = './imgs/' + keyword;
+    , imgsDataFile = keyword + '-images.json';
    
   google.list({
       keyword: keyword,
@@ -42,7 +41,8 @@ var scrapeGoogle = (keyword, num) => {
   
 }
 
-var key = process.argv[2] || 'hotdog'
-    count = process.argv[3] || 100;
+var searchKey = process.argv[2] || 'hotdog'
+    imgCount = process.argv[3] || 100;
+    destPath = process.argv[4] || './imgs/' + searchKey
 
-scrapeGoogle(key, count);
+scrapeGoogle(searchKey, imgCount, destPath);
