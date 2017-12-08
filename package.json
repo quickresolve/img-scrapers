@@ -1,0 +1,15 @@
+{
+  "name": "img-scrapers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scrape-google.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lnm",
+  "license": "ISC",
+  "dependencies": {
+    "download": "^6.2.5",
+    "images-scraper": "^2.0.11"
+  }
+}
