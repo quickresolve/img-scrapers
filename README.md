@@ -4,6 +4,8 @@
 
 Download images from google. Currently using JS with plans to include other languages in the future.
 
+*Default set to download 100 hotdog images - see step 5 to overwrite default*
+
 ## Instructions
 
 1. Clone repository, in the terminal execute:
